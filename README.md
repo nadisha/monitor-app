@@ -28,6 +28,7 @@ The monitor should allow callers to define a grace time.  If a service is not re
 * Ability to stop monitoring of a service
 * Ability to modify caller and service details
 * Ability to delete caller and service records
+* Send notifications
 
 ## Not Done
 * Writting unit tests
