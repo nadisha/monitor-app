@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>        
+
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+        
+<tiles-definitions>
+
+    <!-- Start Main Layouts definitions -->
+    <definition name="main-layout"  template="/WEB-INF/views/layout/main.jsp">
+        
+    </definition>
+
+    <definition name="partial-layout" template="/WEB-INF/views/layout/partial.jsp">
+
+    </definition>
+
+
+    <definition name="dashboard" extends="partial-layout">
+		<put-attribute name="partial-content" value="/WEB-INF/views/dashboard.jsp" />
+    </definition>
+    
+    <definition name="service" extends="partial-layout">
+		<put-attribute name="partial-content" value="/WEB-INF/views/service.jsp" />
+    </definition> 
+    
+    <definition name="caller" extends="partial-layout">
+		<put-attribute name="partial-content" value="/WEB-INF/views/caller.jsp" />
+    </definition>         
+
+    <definition name="service-subscription" extends="partial-layout">
+		<put-attribute name="partial-content" value="/WEB-INF/views/service-subscribe.jsp" />
+    </definition>    
+            
+<!--
+    <definition name="reset-password-invalid" extends="main-layout">
+        <put-attribute name="title" value="Password Reset Failed"/>
+        <put-attribute name="bodyContent" value="/WEB-INF/views/reset_password_invalid.jsp" />
+    </definition>
+    
+    <definition name="reset-password-acknowledgement" extends="main-layout">
+        <put-attribute name="title" value="Password Reset Acknowledgement"/>
+        <put-attribute name="bodyContent" value="/WEB-INF/views/reset_password_acknowledgement.jsp" />
+    </definition>
+        
+    <definition name="reset-password-acknowledgement-web" extends="main-layout">
+        <put-attribute name="title" value="Password Reset Acknowledgement"/>
+        <put-attribute name="bodyContent" value="/WEB-INF/views/reset_password_acknowledgement-web.jsp" />
+    </definition>
+    <definition name="user-signin"  extends="main-layout">
+        <put-attribute name="title" value="Sign In"/>
+        <put-attribute name="bodyContent" value="/WEB-INF/views/home/signin-page.jsp" />
+    </definition> -->
+
+    <!--Public Pages-->
+<!--     <definition name="home-page" extends="main-layout">
+        <put-attribute name="title" value="RenoRun"/>
+        <put-attribute name="bodyContent" value="/WEB-INF/views/home/home-page.jsp" />
+    </definition>
+
+    <definition name="signin-page" extends="main-layout">
+        <put-attribute name="title" value="RenoRun"/>
+        <put-attribute name="bodyContent" value="/WEB-INF/views/home/signin-page.jsp" />
+    </definition>
+
+    <definition name="checkout-page" extends="partial-layout">
+        <put-attribute name="title" value="RenoRun-Checkout"/>
+        <put-attribute name="partial-content" value="/WEB-INF/views/order/custom_order_checkout.jsp" />
+    </definition>
+    
+    <definition name="charge_result-page" extends="partial-layout">
+        <put-attribute name="title" value="RenoRun-Charge"/>
+        <put-attribute name="partial-content" value="/WEB-INF/views/order/custom_order_charge_result.jsp" />
+    </definition>    
+    
+    <definition name="charge_result-page-fr" extends="partial-layout">
+        <put-attribute name="title" value="RenoRun-Charge"/>
+        <put-attribute name="partial-content" value="/WEB-INF/views/order/custom_order_charge_result_fr.jsp" />
+    </definition>  -->
+    <!--Dashboard Pages-->
+
+    <!-- Dashboard Layout definitions -->
+<!--     <definition name="dashboard-layout" template="/WEB-INF/views/layouts/dashboard_layout.jsp">
+        <put-attribute name="htmlHeader" value="/WEB-INF/views/layouts/common/html_header.jsp" />
+        <put-attribute name="navHeader" value="/WEB-INF/views/layouts/common/nav_header.jsp" />
+        <put-attribute name="left-menu-panel" value="/WEB-INF/views/user/left-menu.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/views/layouts/common/footer.jsp" />
+    </definition>
+    
+    <definition name="admin-dashboard-layout" template="/WEB-INF/views/layouts/dashboard_layout.jsp">
+        <put-attribute name="htmlHeader" value="/WEB-INF/views/layouts/common/html_header.jsp" />
+        <put-attribute name="navHeader" value="/WEB-INF/views/layouts/common/nav_header.jsp" />
+        <put-attribute name="left-menu-panel" value="/WEB-INF/views/user/admin-left-menu.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/views/layouts/common/footer.jsp" />
+    </definition>    
+    
+    <definition name="area-manager-dashboard-layout" template="/WEB-INF/views/layouts/dashboard_layout.jsp">
+        <put-attribute name="htmlHeader" value="/WEB-INF/views/layouts/common/html_header.jsp" />
+        <put-attribute name="navHeader" value="/WEB-INF/views/layouts/common/nav_header.jsp" />
+        <put-attribute name="left-menu-panel" value="/WEB-INF/views/user/manager-left-menu.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/views/layouts/common/footer.jsp" />
+    </definition>    
+
+    <definition name="signin-page" extends="main-layout">
+        <put-attribute name="title" value="Password Reset Acknowledgement"/>
+        <put-attribute name="bodyContent" value="/WEB-INF/views/home/signin-page.jsp" />
+    </definition>
+    
+    <definition name="user-forgot-pwd" extends="main-layout">
+        <put-attribute name="title" value="Forgot Password "/>
+        <put-attribute name="bodyContent" value="/WEB-INF/views/home/forgot-pwd-page.jsp" />
+    </definition> -->
+    
+    
+
+    <!--Users-->
+<!--     <definition name="user-list" extends="partial-layout">
+        <put-attribute name="partial-content" value="/WEB-INF/views/user/user-list.jsp" />
+    </definition>
+
+    <definition name="user-create" extends="partial-layout">
+        <put-attribute name="partial-content" value="/WEB-INF/views/user/user-create.jsp" />
+    </definition> -->
+    
+    <!--Orders-->
+<!--     <definition name="order-list" extends="partial-layout">
+        <put-attribute name="partial-content" value="/WEB-INF/views/order/order-list.jsp" />
+    </definition>
+
+    <definition name="order-create" extends="partial-layout">
+        <put-attribute name="partial-content" value="/WEB-INF/views/order/order-create.jsp" />
+    </definition>
+    
+    <definition name="orders-pool" extends="partial-layout">
+        <put-attribute name="partial-content" value="/WEB-INF/views/order/orders-pool.jsp" />
+    </definition>
+    
+    <definition name="order-history" extends="partial-layout">
+        <put-attribute name="partial-content" value="/WEB-INF/views/order/order-history.jsp" />
+    </definition>
+    
+     <definition name="order-summary" extends="partial-layout">
+        <put-attribute name="partial-content" value="/WEB-INF/views/order/order-summary.jsp" />
+    </definition>
+     <definition name="order-custom-list" extends="partial-layout">
+        <put-attribute name="partial-content" value="/WEB-INF/views/order/order-custom-list.jsp" />
+    </definition>
+    <definition name="add-custom-order" extends="partial-layout">
+        <put-attribute name="partial-content" value="/WEB-INF/views/order/add-custom-order.jsp" />
+    </definition>
+    <definition name="custom-order-preview" extends="partial-layout">
+        <put-attribute name="partial-content" value="/WEB-INF/views/order/order-custom-summary.jsp" />
+    </definition> -->
+
+   <!--Stores-->
+<!--     <definition name="store-list" extends="partial-layout">
+        <put-attribute name="partial-content" value="/WEB-INF/views/store/store-list.jsp" />
+    </definition>
+
+    <definition name="store-create" extends="partial-layout">
+        <put-attribute name="partial-content" value="/WEB-INF/views/store/store-create.jsp" />
+    </definition> -->
+
+    <!--Vendors-->
+<!--     <definition name="vendor-list" extends="partial-layout">
+        <put-attribute name="partial-content" value="/WEB-INF/views/vendor/vendor-list.jsp" />
+    </definition>
+
+    <definition name="vendor-create" extends="partial-layout">
+        <put-attribute name="partial-content" value="/WEB-INF/views/vendor/vendor-create.jsp" />
+    </definition> -->
+
+    <!--Areas-->
+<!--     <definition name="area-list" extends="partial-layout">
+        <put-attribute name="partial-content" value="/WEB-INF/views/area/area-list.jsp" />
+    </definition>
+
+    <definition name="area-create" extends="partial-layout">
+        <put-attribute name="partial-content" value="/WEB-INF/views/area/area-create.jsp" />
+    </definition>  -->
+    <!-- Drivers -->
+<!--     <definition name="drivers" extends="partial-layout">
+        <put-attribute name="partial-content" value="/WEB-INF/views/drivers/drivers.jsp" />
+    </definition> -->
+
+
+</tiles-definitions>

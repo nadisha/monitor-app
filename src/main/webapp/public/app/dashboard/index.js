@@ -1,0 +1,3 @@
+define([
+	        './dashboard-controller'
+        ], function() {});

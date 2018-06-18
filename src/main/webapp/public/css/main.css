@@ -1,0 +1,90 @@
+/*
+Note: any .css or .scss files included in the 'styles' directory
+will be correctly compiled during `gulp serve` and `gulp`
+ */
+
+html,
+body {
+  min-height: 100vh;
+}
+body {
+  background: #edefed;
+}
+footer,
+#search-bar {
+  background: #fff;
+  padding: 15px 0;
+}
+#search-bar {
+  border-bottom: 1px solid rgba(0,0,0,.06);
+}
+footer {
+  border-top: 1px solid rgba(0,0,0,.06);
+}
+
+/*UIKit overrides*/
+/*.uk-dropdown,*/
+.uk-navbar {
+    background: #fff;
+}
+.uk-navbar-nav > li > a {
+  font-size: 16px;
+  height: 70px;
+  line-height: 70px;
+}
+.uk-navbar-brand,
+.uk-navbar-content,
+.uk-navbar-toggle {
+  height: 70px;
+  line-height: 70px;
+}
+.uk-navbar-nav .uk-navbar-nav-subtitle {
+  line-height: 50px;
+}
+.uk-navbar-brand img,
+.uk-navbar-nav img,
+.uk-navbar-nav i {
+  height: 40px;
+  margin-top: 15px;
+}
+.uk-navbar-nav-subtitle > div {
+    margin-top: -12px;
+    font-size: 12px;
+    line-height: 12px;
+}
+.uk-navbar-flip {
+  text-align: right;
+}
+.uk-accordion-content {
+    padding: 0;
+}
+.uk-accordion-title {
+    margin-bottom: 1px;
+    /*background: #fff;*/
+    padding: 15px;
+}
+.uk-breadcrumb,
+.uk-pagination {
+  padding: 17px 0;
+  margin: 0;
+  /*background: #ddd;*/
+}
+/*.uk-panel-box {
+  background: #fff;
+}*/
+ul.uk-nav-sub {
+  padding-left: 25px;
+}
+
+/*Utility*/
+.border-radius-remove {
+  border-radius: 0 !important;
+}
+.border-radius-left-remove {
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+.border-radius-right-remove {
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}

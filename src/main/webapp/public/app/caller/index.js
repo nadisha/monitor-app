@@ -1,0 +1,3 @@
+define([
+	        './caller-controller'
+        ], function() {});

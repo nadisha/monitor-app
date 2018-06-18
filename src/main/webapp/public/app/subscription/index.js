@@ -1,0 +1,3 @@
+define([
+	        './subscription-controller'
+        ], function() {});

@@ -1,0 +1,54 @@
+###########################################################
+############ Environment Configuration Template ###########
+###########################################################
+
+###########################################################
+############ DATABASE CONFIGURATION #######################
+###########################################################
+# Database connection details
+datasource.database=dbname
+datasource.host=localhost
+datasource.port=3306
+datasource.driver-class-name=com.mysql.jdbc.Driver
+datasource.url=jdbc:mysql://${datasource.host}:${datasource.port}/${datasource.database}?zeroDateTimeBehavior=convertToNull&autoReconnect=true&characterEncoding=UTF-8&characterSetResults=UTF-8
+datasource.username=
+datasource.password=
+# The initial number of connections that are created when the pool is started. 
+datasource.initial-size=5
+# The maximum number of active connections that can be allocated from this pool at the same time, or negative for no limit.
+datasource.max-active=8
+# The maximum number of connections that can remain idle in the pool, without extra ones being released, or negative for no limit.
+datasource.max-idle=8
+# The minimum number of connections that can remain idle in the pool, without extra ones being created, or zero to create none.
+datasource.min-idle=10
+# The maximum number of milliseconds that the pool will wait (when there are no available connections) for a connection to be returned before throwing an exception, or -1 to wait indefinitely.
+datasource.max-wait-millis=10
+
+############  JPA Framework properties ####################
+# Show or not log for each sql query
+jpa.show-sql=true
+
+# Hibernate ddl auto (create, create-drop, update): with "update" the database
+# schema will be automatically updated accordingly to java entities found in
+# the project
+jpa.hibernate.ddl-auto=update
+
+# Naming strategy
+jpa.hibernate.naming-strategy=org.hibernate.cfg.ImprovedNamingStrategy
+
+# Allows Hibernate to generate SQL optimized for a particular DBMS
+jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL5Dialect
+
+###########################################################
+############# EMAIL CONFIGURATION #########################
+###########################################################
+# SMTP server host. For instance `smtp.example.com`
+mail.host= 
+# SMTP server port. 
+mail.port= 
+# Protocol used by the SMTP server.
+mail.protocol=smtp
+# Login user of the SMTP server. 
+mail.username=
+# Login password of the SMTP server.
+mail.password= 
